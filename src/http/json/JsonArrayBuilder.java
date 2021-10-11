@@ -2,12 +2,14 @@ package http.json;
 
 import notes.Note;
 
+import java.time.LocalDateTime;
+
 public class JsonArrayBuilder {
-    private final Note note = new Note("Пароли", "А их тут нет");
+    private final Note passNote = new Note("Пароли", "А их тут нет", LocalDateTime.now());
 
     public String build() {
-        return "{" +
-                "[ " + new JsonBuilder().build(note) +
+        return "{" + "\"notes" + "\"" + ": " +
+                "[ " + new JsonBuilder().build(passNote) +
                 " ]" +
                 "}";
     }
