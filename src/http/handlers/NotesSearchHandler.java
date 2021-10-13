@@ -7,7 +7,6 @@ import notes.Note;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Locale;
 
 public class NotesSearchHandler extends NotesHttpHandler implements HttpHandler {
 

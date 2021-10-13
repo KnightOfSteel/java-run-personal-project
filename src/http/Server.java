@@ -1,6 +1,5 @@
 package http;
 
-import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
 import http.handlers.NotesListHandler;
 import http.handlers.NotesSearchHandler;
