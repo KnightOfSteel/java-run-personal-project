@@ -4,8 +4,8 @@ import notes.Note;
 
 public class JsonBuilder {
     public String build(Note note){
-        return "{" + "\"title" + "\"" + ":" + "\"" + note.getTitle() + "\"" + ", " +
-                "\"content" + "\"" + ":" + "\"" + note.getContent() + "\"" + ", " +
-                "\"creationDate" + "\"" + ":" + "\"" + note.getCreationDate() + "\"" + "}";
+        return String.format("{" + "\"title" + "\"" + ":" + "\"" + "%s" + "\"" + ", " +
+                "\"content" + "\"" + ":" + "\"" + "%s" + "\"" + ", " +
+                "\"creationDate" + "\"" + ":" + "\"" + "%s" + "\"" + "}", note.getTitle(), note.getContent(), note.getCreationDate());
     }
 }
