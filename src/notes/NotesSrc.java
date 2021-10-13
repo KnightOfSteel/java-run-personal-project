@@ -3,7 +3,6 @@ package notes;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
 
 public class NotesSrc {
     private final List<Note> notes;

@@ -7,7 +7,6 @@ public class Note {
     private final String content;
     private final LocalDateTime creationDate;
 
-
     public Note(String title, String content, LocalDateTime creationDate) {
         this.title = title;
         this.content = content;
@@ -25,5 +24,4 @@ public class Note {
     public LocalDateTime getCreationDate() {
         return creationDate;
     }
-
 }
